@@ -105,6 +105,10 @@ html {
   border: 2px solid #0323dd;
   color: #fcfcfc;
   cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+.contact-button:hover {
+  background-color: #0323dd;
 }
 .arrows {
   margin-top: 80px;
