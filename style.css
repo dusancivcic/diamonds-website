@@ -20,7 +20,7 @@ html {
   height: 100vh;
   margin-bottom: 100px;
 }
-.nav-bar-content{
+.nav-bar-content {
   width: 600px;
   display: flex;
   justify-content: space-between;
@@ -34,14 +34,13 @@ html {
   width: 1100px;
   margin: 0 auto;
   height: 100px;
-  
 }
 .nav-links {
   color: white;
   text-decoration: none;
 }
 .nav-button {
-  background-color: #14CFF7;
+  background-color: #14cff7;
   color: #fcfcfc;
   border: none;
   width: 163px;
@@ -224,8 +223,7 @@ html {
 .form-content-one {
   display: flex;
 }
-.form-content-two {
-}
+
 .form-content-one input {
   border: none;
   padding: 20px;
@@ -330,7 +328,7 @@ p {
   justify-content: end;
   align-items: center;
 }
-.address {ow We Do It
+.address {
   display: flex;
 }
 .mail {
