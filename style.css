@@ -21,23 +21,28 @@ html {
   margin-bottom: 100px;
 }
 .nav-bar-content {
-  width: 700px;
+  width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav-bar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   top: 0;
-  width: 1100px;
+  width: 1200px;
   margin: 0 auto;
   height: 100px;
 }
 .nav-links {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+.nav-links:hover {
+  color: #14cff7;
 }
 .nav-button {
   background-color: #14cff7;
@@ -97,6 +102,9 @@ html {
   justify-content: center;
   margin-bottom: 20px;
 }
+.d-logo {
+  height: 50px;
+}
 .contact-button {
   margin-top: 30px;
   height: 40px;
@@ -116,7 +124,7 @@ html {
   margin-bottom: 20px;
 }
 .about-us-section {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   color: #00142d;
   margin-bottom: 200px;
@@ -126,10 +134,13 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.about-us-container img {
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.19);
+}
 .about-us-text h2 {
   margin-bottom: 20px;
   font-size: 46px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .about-us-text p {
   line-height: 40px;
@@ -152,12 +163,12 @@ html {
 .what-we-do-section h2 {
   margin-bottom: 40px;
   font-size: 46px;
-  font-weight: 500;
+  font-weight: 600;
   color: #00142d;
   text-align: center;
 }
 .what-we-do-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -209,10 +220,11 @@ html {
   font-size: 14px;
   color: #fcfcfc;
   font-weight: 300;
+  line-height: 25px;
 }
 .how-we-do-it-content-container {
   height: 100vh;
-  width: 1100px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -246,21 +258,31 @@ html {
   font-weight: 300;
   color: #001f4b;
   transition: box-shadow 0.3s ease-in;
+  font-family: "Montserrat", sans-serif;
 }
-
+.form-content-one input::placeholder {
+  color: #00142d;
+  opacity: 1;
+}
+.form-content-two textarea::placeholder {
+  color: #00142d;
+  opacity: 1;
+  text-align: left;
+  vertical-align: top;
+}
 .form-content-one input:focus {
   box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.19);
 }
 .form-content-one input:focus-visible {
   outline: none;
 }
-.form-content-two input:focus {
+.form-content-two textarea:focus {
   box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.19);
 }
-.form-content-two input:focus-visible {
+.form-content-two textarea:focus-visible {
   outline: none;
 }
-.form-content-two input {
+.form-content-two textarea {
   border: none;
   padding: 20px;
   width: 900px;
@@ -269,20 +291,22 @@ html {
   transition: box-shadow 0.3s ease-in;
   font-size: 18px;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
   color: #001f4b;
+  resize: none;
 }
 .contact-us-section {
   position: relative;
   margin-bottom: 50px;
 }
 .contact-us-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .contact-us-container h2 {
   margin-bottom: 40px;
   font-size: 46px;
-  font-weight: 500;
+  font-weight: 600;
   color: #00142d;
 }
 .submit-button {
@@ -336,9 +360,15 @@ p {
   margin: 0 auto;
 }
 .footer-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container-right-part {
   display: flex;
   flex-direction: row;
   justify-content: end;

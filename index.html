@@ -17,6 +17,7 @@
     <section class="hero-section">
       <div class="hero-container">
         <div class="nav-bar">
+          <img class="d-logo" src="images/letter-d.svg" alt="" />
           <div class="nav-bar-content">
             <a class="nav-links" href="">Home</a>
             <a class="nav-links" href="">About Us</a>
@@ -37,13 +38,13 @@
             reprehenderit in
           </p>
           <button class="contact-button">Contact Us</button>
-          <div class="arrows">
+          <div class="arrows" onclick="goTo()">
             <img src="images/arrows.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <section class="about-us-section">
+    <section class="about-us-section" id="about-us-section">
       <img src="images/triangles.png" class="triangles" alt="" />
       <div class="about-us-container">
         <img src="images/diamond-image.png" style="z-index: 999" alt="" />
@@ -143,12 +144,13 @@
               <input type="text" id="email" name="email" placeholder="Email" />
             </div>
             <div class="form-content-two">
-              <input
-                type="text"
-                id="message"
+              <textarea
                 name="message"
-                placeholder="Messages"
-              />
+                id=""
+                cols="120"
+                rows="23"
+                placeholder="Message"
+              ></textarea>
             </div>
             <input
               class="submit-button"
@@ -163,26 +165,32 @@
     </section>
     <section class="footer-section">
       <div class="footer-container">
-        <div class="footer-links-rights">
-          <div class="footer-links">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">What We Do</a>
-            <a href="">How We Do It</a>
+        <img src="images/letter-d.svg" class="d-logo" alt="" />
+        <div class="footer-container-right-part">
+          <div class="footer-links-rights">
+            <div class="footer-links">
+              <a href="">Home</a>
+              <a href="">About Us</a>
+              <a href="">What We Do</a>
+              <a href="">How We Do It</a>
+            </div>
+            <div class="rights">
+              <p>© 2021 Diamonds All Rights Reserved.</p>
+            </div>
           </div>
-          <div class="rights"><p>© 2021 Diamonds All Rights Reserved.</p></div>
-        </div>
-        <div class="footer-address-mail">
-          <div class="address">
-            <img src="images/location.svg" alt="" class="location-icon" />
-            <p>Cayman Islands</p>
-          </div>
-          <div class="mail">
-            <img src="images/email2.svg" alt="" class="email-icon" />
-            <p>example@gmail.com</p>
+          <div class="footer-address-mail">
+            <div class="address">
+              <img src="images/location.svg" alt="" class="location-icon" />
+              <p>Cayman Islands</p>
+            </div>
+            <div class="mail">
+              <img src="images/email2.svg" alt="" class="email-icon" />
+              <p>example@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
