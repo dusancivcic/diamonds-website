@@ -5,4 +5,11 @@ function goTo(e) {
 
     e.preventDefault();
     e.stopPropagation();
+
+}
+function goTo2(e) {
+    window.location.href = "#contact-us-section";
+
+    e.preventDefault();
+    e.stopPropagation();
 }
